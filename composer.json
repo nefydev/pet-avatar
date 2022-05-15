@@ -1,0 +1,41 @@
+{
+    "name": "nefydev/pet-avatar",
+    "description": "Cute avatar generator.",
+    "keywords": [
+        "laravel",
+        "laravel-package",
+        "avatar",
+        "pet-avatar"
+    ],
+    "homepage": "https://github.com/nefydev/pet-avatar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nefy",
+            "email": "info@nefy.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nefydev\\PetAvatar\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nefydev\\PetAvatar\\PetAvatarServiceProvider"
+            ],
+            "aliases": {
+                "PetAvatar": "Nefydev\\PetAvatar\\Facades\\PetAvatar"
+            }
+        }
+    }
+}
