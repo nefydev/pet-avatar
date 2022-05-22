@@ -10,7 +10,7 @@ Generate a random cute avatar using the GD Library
 
 ## Requirements
 
-- PHP 7.4 or later
+- PHP 8.0 or later
 - PHP GD extension must be enabled
 
 ## Installation
@@ -30,7 +30,7 @@ php artisan vendor:publish --provider="Nefydev\PetAvatar\PetAvatarServiceProvide
 
 ```php
     use Nefydev\PetAvatar\Facades\PetAvatar;
-    ...
+    //...
 
     // generate a cute random avatar
  	$avatar = PetAvatar::generate(); 
